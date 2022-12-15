@@ -23,3 +23,16 @@ console.log('Filter Array');
 console.log('------------------------------');
 console.log(resultFilter);
 // Big-O = O(n)
+
+///////////////////////////////
+//////// Reduce Array /////////
+///////////////////////////////
+
+const reduceArray = [1, 2, 3, 4, 5];
+const resultReduce = reduceArray.reduce((total, el) => (total += el), 0);
+
+console.log('------------------------------');
+console.log('Reduce Array');
+console.log('------------------------------');
+console.log(resultReduce);
+// Big-O = O(n)
