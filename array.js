@@ -36,3 +36,17 @@ console.log('Reduce Array');
 console.log('------------------------------');
 console.log(resultReduce);
 // Big-O = O(n)
+
+///////////////////////////////
+//////// Concat Arrays /////////
+///////////////////////////////
+
+const concatArray1 = [1, 2, 3];
+const concatArray2 = [4, 5];
+const resultConcat = concatArray1.concat(concatArray2);
+
+console.log('------------------------------');
+console.log('concat Array');
+console.log('------------------------------');
+console.log(resultConcat);
+// Big-O = O(n)
