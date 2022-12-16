@@ -22,7 +22,7 @@ console.log('------------------------------');
 console.log(addElSet);
 
 ///////////////////////////////
-///////// Delete El Set //////////
+//////// Delete El Set ////////
 ///////////////////////////////
 
 const deleteElSet = new Set([1, 2, 3]);
