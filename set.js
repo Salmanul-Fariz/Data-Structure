@@ -20,3 +20,15 @@ console.log('------------------------------');
 console.log('Add Element Set');
 console.log('------------------------------');
 console.log(addElSet);
+
+///////////////////////////////
+///////// Delete El Set //////////
+///////////////////////////////
+
+const deleteElSet = new Set([1, 2, 3]);
+deleteElSet.delete(3);
+
+console.log('------------------------------');
+console.log('Delete Element Set');
+console.log('------------------------------');
+console.log(deleteElSet);
