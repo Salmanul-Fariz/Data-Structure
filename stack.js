@@ -52,3 +52,13 @@ console.log('------------------------------');
 console.log('Size Stack');
 console.log('------------------------------');
 console.log(stack.size());
+
+///////////////////////////////
+///////// Print Stack /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Print Stack');
+console.log('------------------------------');
+
+stack.print();
