@@ -27,3 +27,14 @@ class Stack {
     console.log(this.items);
   }
 }
+
+///////////////////////////////
+//////// IsEmpty Stack ////////
+///////////////////////////////
+
+const stack = new Stack();
+
+console.log('------------------------------');
+console.log('IsEmpty Stack');
+console.log('------------------------------');
+console.log(stack.isEmpty());
