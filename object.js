@@ -29,3 +29,19 @@ console.log('Values of Object');
 console.log('------------------------------');
 console.log(Object.values(valuesOfObject));
 // Big-O = O(n)
+
+///////////////////////////////
+///// Entries of Object ///////
+///////////////////////////////
+
+const entriesOfObject = {
+  name: 'user',
+  age: 20,
+  country: 'india',
+};
+
+console.log('------------------------------');
+console.log('Entries of Object');
+console.log('------------------------------');
+console.log(Object.entries(entriesOfObject));
+// Big-O = O(n)
