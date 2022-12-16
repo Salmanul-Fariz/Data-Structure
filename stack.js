@@ -71,3 +71,12 @@ console.log('------------------------------');
 console.log('Pop Stack');
 console.log('------------------------------');
 console.log(stack.pop());
+
+///////////////////////////////
+///////// Peak Stack /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Peak Stack');
+console.log('------------------------------');
+console.log(stack.peak());
