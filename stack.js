@@ -62,3 +62,12 @@ console.log('Print Stack');
 console.log('------------------------------');
 
 stack.print();
+
+///////////////////////////////
+///////// Pop Stack /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Pop Stack');
+console.log('------------------------------');
+console.log(stack.pop());
