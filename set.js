@@ -32,3 +32,15 @@ console.log('------------------------------');
 console.log('Delete Element Set');
 console.log('------------------------------');
 console.log(deleteElSet);
+
+///////////////////////////////
+///////// clear Set ///////////
+///////////////////////////////
+
+const clearSet = new Set([1, 2, 3]);
+clearSet.clear();
+
+console.log('------------------------------');
+console.log('Clear Set');
+console.log('------------------------------');
+console.log(clearSet);
