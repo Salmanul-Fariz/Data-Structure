@@ -28,13 +28,27 @@ class Stack {
   }
 }
 
+const stack = new Stack();
+
 ///////////////////////////////
 //////// IsEmpty Stack ////////
 ///////////////////////////////
-
-const stack = new Stack();
 
 console.log('------------------------------');
 console.log('IsEmpty Stack');
 console.log('------------------------------');
 console.log(stack.isEmpty());
+
+///////////////////////////////
+///////// Size Stack //////////
+///////////////////////////////
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+stack.push(40);
+
+console.log('------------------------------');
+console.log('Size Stack');
+console.log('------------------------------');
+console.log(stack.size());
