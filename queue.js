@@ -30,3 +30,14 @@ class Queue {
     return this.items;
   }
 }
+
+const queue = new Queue();
+
+///////////////////////////////
+//////// IsEmpty Queue ////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('IsEmpty Queue');
+console.log('------------------------------');
+console.log(queue.isEmpty());
