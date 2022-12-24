@@ -77,3 +77,12 @@ console.log('------------------------------');
 console.log('Optimised Dequeue Queue');
 console.log('------------------------------');
 console.log(queue.dequeue());
+
+///////////////////////////////
+///////// Peek Queue //////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Optimised Peek Queue');
+console.log('------------------------------');
+console.log(queue.peek());
