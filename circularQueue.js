@@ -64,3 +64,14 @@ class CircularQueue {
     }
   }
 }
+
+const circularQueue = new CircularQueue(5);
+
+///////////////////////////////
+/// IsEmpty Circular Queue ////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('IsEmpty Circular Queue');
+console.log('------------------------------');
+console.log(circularQueue.isEmpty());
