@@ -58,3 +58,13 @@ console.log('------------------------------');
 console.log('Optimised Size Queue');
 console.log('------------------------------');
 console.log(queue.size());
+
+///////////////////////////////
+///////// Print Queue /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Optimised Print Queue');
+console.log('------------------------------');
+
+queue.print();
