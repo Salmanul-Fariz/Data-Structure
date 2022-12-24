@@ -99,3 +99,12 @@ console.log('Print Circular Queue');
 console.log('------------------------------');
 
 circularQueue.print();
+
+///////////////////////////////
+/// Dequeue Circular Queue ////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Dequeue Circular Queue');
+console.log('------------------------------');
+console.log(circularQueue.dequeue());
