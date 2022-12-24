@@ -41,3 +41,17 @@ console.log('------------------------------');
 console.log('IsEmpty Queue');
 console.log('------------------------------');
 console.log(queue.isEmpty());
+
+///////////////////////////////
+///////// Size Queue //////////
+///////////////////////////////
+
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+queue.enqueue(40);
+
+console.log('------------------------------');
+console.log('Size Queue');
+console.log('------------------------------');
+console.log(queue.size());
