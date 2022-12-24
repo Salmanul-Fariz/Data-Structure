@@ -27,7 +27,7 @@ class Queue {
   }
 
   print() {
-    return this.items;
+    console.log(this.items.toString());
   }
 }
 
@@ -55,3 +55,13 @@ console.log('------------------------------');
 console.log('Size Queue');
 console.log('------------------------------');
 console.log(queue.size());
+
+///////////////////////////////
+///////// Print Queue /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Print Queue');
+console.log('------------------------------');
+
+queue.print();
