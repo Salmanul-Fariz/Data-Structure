@@ -57,7 +57,7 @@ class CircularQueue {
       let i,
         str = '';
       for (i = this.front; i !== this.rear; i = (i + 1) % this.capacity) {
-        str += this.items[i] + '';
+        str += this.items[i] + ' ';
       }
       str += this.items[i];
       console.log(str);
@@ -89,3 +89,13 @@ console.log('------------------------------');
 console.log('isFull Circular Queue');
 console.log('------------------------------');
 console.log(circularQueue.isFull());
+
+///////////////////////////////
+///// Print Circular Queue ////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Print Circular Queue');
+console.log('------------------------------');
+
+circularQueue.print();
