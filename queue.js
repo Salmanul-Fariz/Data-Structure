@@ -74,3 +74,12 @@ console.log('------------------------------');
 console.log('Dequeue Queue');
 console.log('------------------------------');
 console.log(queue.dequeue());
+
+///////////////////////////////
+///////// Peek Queue //////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Peek Queue');
+console.log('------------------------------');
+console.log(queue.peek());
