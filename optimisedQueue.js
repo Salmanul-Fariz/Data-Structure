@@ -33,3 +33,14 @@ class Queue {
     console.log(this.items);
   }
 }
+
+const queue = new Queue();
+
+///////////////////////////////
+//////// IsEmpty Queue ////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Optimised IsEmpty Queue');
+console.log('------------------------------');
+console.log(queue.isEmpty());
