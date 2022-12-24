@@ -65,3 +65,12 @@ console.log('Print Queue');
 console.log('------------------------------');
 
 queue.print();
+
+///////////////////////////////
+///////// Dequeue Queue ///////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Dequeue Queue');
+console.log('------------------------------');
+console.log(queue.dequeue());
