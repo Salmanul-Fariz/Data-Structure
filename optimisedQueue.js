@@ -18,7 +18,7 @@ class Queue {
   }
 
   isEmpty() {
-    return this.items[this.front] - this.items[this.rear] === 0;
+    return this.rear - this.front === 0;
   }
 
   peek() {
@@ -26,7 +26,7 @@ class Queue {
   }
 
   size() {
-    return this.items[this.rear] - this.items[this.front];
+    return this.rear - this.front;
   }
 
   print() {
@@ -44,3 +44,17 @@ console.log('------------------------------');
 console.log('Optimised IsEmpty Queue');
 console.log('------------------------------');
 console.log(queue.isEmpty());
+
+///////////////////////////////
+///////// Size Queue //////////
+///////////////////////////////
+
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+queue.enqueue(40);
+
+console.log('------------------------------');
+console.log('Optimised Size Queue');
+console.log('------------------------------');
+console.log(queue.size());
