@@ -75,3 +75,17 @@ console.log('------------------------------');
 console.log('IsEmpty Circular Queue');
 console.log('------------------------------');
 console.log(circularQueue.isEmpty());
+
+///////////////////////////////
+//// isFull Circular Queue ////
+///////////////////////////////
+
+circularQueue.enqueue(10);
+circularQueue.enqueue(20);
+circularQueue.enqueue(30);
+circularQueue.enqueue(40);
+
+console.log('------------------------------');
+console.log('isFull Circular Queue');
+console.log('------------------------------');
+console.log(circularQueue.isFull());
