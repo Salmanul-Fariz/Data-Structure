@@ -108,3 +108,12 @@ console.log('------------------------------');
 console.log('Dequeue Circular Queue');
 console.log('------------------------------');
 console.log(circularQueue.dequeue());
+
+///////////////////////////////
+///// Peek Circular Queue /////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Peek Circular Queue');
+console.log('------------------------------');
+console.log(circularQueue.peek());

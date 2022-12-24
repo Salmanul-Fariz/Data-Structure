@@ -86,3 +86,4 @@ console.log('------------------------------');
 console.log('Optimised Peek Queue');
 console.log('------------------------------');
 console.log(queue.peek());
+
