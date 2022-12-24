@@ -68,3 +68,12 @@ console.log('Optimised Print Queue');
 console.log('------------------------------');
 
 queue.print();
+
+///////////////////////////////
+///////// Dequeue Queue ///////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Optimised Dequeue Queue');
+console.log('------------------------------');
+console.log(queue.dequeue());
