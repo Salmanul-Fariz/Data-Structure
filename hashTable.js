@@ -14,17 +14,48 @@ class HashTable {
 
   set(key, value) {
     const index = this.hash(key);
-    this.table[index] = value;
+    // this.table[index] = value;
+    const bucket = this.table[index];
+
+    if (!bucket) {
+      this.table[index] = [[key, value]];
+    } else {
+      const sameKeyItem = bucket.find((val) => val[0] === key);
+
+      if (sameKeyItem) {
+        sameKeyItem[1] = value;
+      } else {
+        bucket.push([key, value]);
+      }
+    }
   }
 
   get(key) {
     const index = this.hash(key);
-    return this.table[index];
+    // return this.table[index];
+    const bucket = this.table[index];
+
+    if (bucket) {
+      const sameKeyItem = bucket.find((val) => val[0] === key);
+      if (sameKeyItem) {
+        return sameKeyItem[1];
+      }
+    }
+    return undefined;
   }
 
-  remove() {
+  remove(key) {
     const index = this.hash(key);
-    this.table[index] = undefined;
+    // this.table[index] = undefined;
+
+    const bucket = this.table[index];
+
+    if (bucket) {
+      const sameKeyItem = bucket.find((val) => val[0] === key);
+      if (sameKeyItem) {
+        bucket.splice(bucket.indexOf(sameKeyItem), 1);
+      }
+    }
   }
 
   display() {
@@ -35,3 +66,9 @@ class HashTable {
     }
   }
 }
+
+const table = new HashTable(4);
+
+table.set('sal', 'sd');
+table.set('sla', 'sd');
+table.set('sal', 'sd');
