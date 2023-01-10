@@ -69,6 +69,14 @@ class HashTable {
 
 const table = new HashTable(4);
 
-table.set('sal', 'sd');
-table.set('sla', 'sd');
-table.set('sal', 'sd');
+///////////////////////////////
+///////// Set value ///////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Set value');
+console.log('------------------------------');
+table.set('a', 'first');
+table.set('b', 'second');
+table.set('c', 'third');
+table.display();
