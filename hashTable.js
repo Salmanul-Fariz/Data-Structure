@@ -80,3 +80,13 @@ table.set('a', 'first');
 table.set('b', 'second');
 table.set('c', 'third');
 table.display();
+
+///////////////////////////////
+//////// remove value /////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('Set value');
+console.log('------------------------------');
+table.remove('b');
+table.display();
