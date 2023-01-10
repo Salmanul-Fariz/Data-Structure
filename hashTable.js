@@ -86,7 +86,16 @@ table.display();
 ///////////////////////////////
 
 console.log('------------------------------');
-console.log('Set value');
+console.log('remove value');
 console.log('------------------------------');
 table.remove('b');
 table.display();
+
+///////////////////////////////
+////////// get value //////////
+///////////////////////////////
+
+console.log('------------------------------');
+console.log('get value');
+console.log('------------------------------');
+console.log(table.get('a'));
