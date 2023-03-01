@@ -8,6 +8,7 @@ class Node {
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail = null;
     this.size = 0;
   }
 
@@ -24,6 +25,7 @@ class LinkedList {
 
     if (this.isEmpty()) {
       this.head = node;
+      this.tail = node;
     } else {
       node.next = this.head;
       this.head = node;
@@ -36,13 +38,10 @@ class LinkedList {
 
     if (this.isEmpty()) {
       this.head = node;
+      this.tail = node;
     } else {
-      let prev = this.head;
-      while (prev.next) {
-        prev = prev.next;
-      }
-
-      prev.next = node;
+      this.tail.next = node;
+      this.tail = node;
     }
 
     this.size++;
@@ -135,6 +134,18 @@ class LinkedList {
     return -1;
   }
 
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+    while (curr) {
+      let next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    this.head = prev;
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log('Empty');
@@ -163,5 +174,7 @@ list.append(4);
 list.insert(5, 4);
 // list.removeFrom(3);
 // list.removeValue(5);
+
 list.print();
-console.log(list.search(6));
+list.reverse();
+list.print();
